@@ -4,10 +4,10 @@ import { AiFillStar } from 'react-icons/ai'
 import { BsFillBagHeartFill } from 'react-icons/bs'
 import Card from '../components/Card'
 
-const Products = () => {
+const Products = ({ result }) => {
     return (
         <section className='card-container'>
-            <Card />
+            {result}
         </section>
     )
 }

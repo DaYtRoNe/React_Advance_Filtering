@@ -1,7 +1,45 @@
 .price-title {
-    margin-top: 20px;
+    margin-top: 2.5rem;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--text-primary);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    position: relative;
+    padding-bottom: 12px;
+    margin-bottom: 24px;
+}
+
+.price-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40px;
+    height: 3px;
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    border-radius: 10px;
 }
 
 .ml {
     margin-left: 20px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .price-title {
+        margin-top: 2rem;
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .price-title {
+        font-size: 16px;
+    }
+    
+    .ml {
+        margin-left: 15px;
+    }
 }

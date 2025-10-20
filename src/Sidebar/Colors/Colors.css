@@ -1,3 +1,37 @@
 .color-title {
-    margin-top: 2rem;
+    margin-top: 2.5rem;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--text-primary);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    position: relative;
+    padding-bottom: 12px;
+    margin-bottom: 24px;
+}
+
+.color-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40px;
+    height: 3px;
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    border-radius: 10px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .color-title {
+        margin-top: 2rem;
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .color-title {
+        font-size: 16px;
+    }
 }
