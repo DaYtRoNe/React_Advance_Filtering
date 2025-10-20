@@ -18,7 +18,7 @@ const Card = ({ img, title, star, reviews, prevPrice, newPrice }) => {
                 <section className="card-price">
                     <div className="price-section">
                         <del className="prev-price">{prevPrice}</del>
-                        <span style={{ color: "black"}}>${newPrice}</span>
+                        <span className="new-price">${newPrice}</span>
                     </div>
                     <div className='bag'>
                         <BsFillBagHeartFill className='bag-icon' />

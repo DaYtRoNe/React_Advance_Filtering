@@ -5,7 +5,7 @@ import Input from '../../components/Input'
 const Colors = ({ handleChange }) => {
     return (
         <div>
-            <h2 className='sidebar-title'>Price</h2>
+            <h2 className='sidebar-title'>Colors</h2>
 
             <div>
 
